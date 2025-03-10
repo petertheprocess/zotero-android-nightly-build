@@ -18,7 +18,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: "zotero/zotero-android"
+          submodules: recursive
+          repository: "adityaruplaha/zotero-android"
+          ref: "share-attachments"
 
       - name: Get Latest Commit Hash
         id: get-latest-commit
