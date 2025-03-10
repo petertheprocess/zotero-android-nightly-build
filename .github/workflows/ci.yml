@@ -53,7 +53,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
-          repository: "zotero/zotero-android"
+          repository: "adityaruplaha/zotero-android"
+          ref: "share-attachments"
 
       - name: set up JDK
         uses: actions/setup-java@v3
